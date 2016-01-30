@@ -10,7 +10,7 @@
 #
 
 GeneratePointsOnASpiral <- function(
-  coils = 5, radius = 20, chord = 4, numInputs = 10, rotation = 0){
+  coils = 5, radius = 20, chord = 4, numInputs = 10, rotation = 0.2){
   
   # value of theta corresponding to end of last coil ¯\_(ツ)_/¯
   thetaMax <- coils * 2 * pi
@@ -21,19 +21,21 @@ GeneratePointsOnASpiral <- function(
   # Distance between points to plot, I'm making this a function input
   chord <- chord
   
-  centreX <- round(numInputs / 2)
-  centreY <- round(numInputs / 2)
+  centreX <- 0 # round(numInputs / 2)
+  centreY <- 0 # round(numInputs / 2)
 
   theta <- chord / awayStep
   
   # Have to work out how many iterations it will go in order to
   # prepopulate a matrix
-  numSteps <- floor(thetaMax / (chord / away)) + 1
+  numSteps <- 100 #floor(thetaMax / (chord / away)) + 1
   spiralPoints <- matrix(NA, nrow=numSteps, ncol=2)
   colnames(spiralPoints) <- c("x", "y")
   currentPoint <- 1
+  currentRotation <- 0
+  distanceFromCentre <- 1
   
-  while(theta <= thetaMax){
+  while(currentPoint <= numSteps){
     # How far away from centre
     away <- awayStep * theta
     
@@ -41,8 +43,15 @@ GeneratePointsOnASpiral <- function(
     around <- theta + rotation
     
     # Convert 'around' and 'away' to X and Y
-    spiralPoints[currentPoint, "x"] <- round(centreX + cos(around) * away)
-    spiralPoints[currentPoint, "y"] <- round(centreY + sin(around) * away)
+#     spiralPoints[currentPoint, "x"] <- round(centreX + cos(around) * away)
+#     spiralPoints[currentPoint, "y"] <- round(centreY + sin(around) * away)
+    
+    spiralPoints[currentPoint, "x"] <- round(centreX + cos(currentRotation) * distanceFromCentre)
+    spiralPoints[currentPoint, "y"] <- round(centreY + sin(currentRotation) * distanceFromCentre)
+    
+    currentRotation <- currentRotation + 0.5
+    distanceFromCentre <- distanceFromCentre + 1
+
     
     theta <- theta + (chord / away)
     currentPoint <- currentPoint + 1
@@ -50,7 +59,44 @@ GeneratePointsOnASpiral <- function(
   
   data.frame(spiralPoints)
 }
+# 
+# this <- GeneratePointsOnASpiral()
+# ggplot(this, aes(x=x, y=y)) + 
+#   geom_point() + 
+#   geom_path()  #+ 
+#   scale_x_discrete() +
+#   scale_y_discrete()
 
-this <- GeneratePointsOnASpiral()
-ggplot(this, aes(x=x, y=y)) + geom_point() + geom_path()
+# function that calculates the next point in the spiral
+CalcNextPoint <- function(x=0, y=0, angleOffset = 1, distOffset = 10, clockwise = 1 ){
+  distance <- sqrt(x^2 + y^2)
+#   clockwise <- sample(c(-1, 1), 1)
+  distance <- clockwise * (distance + runif(1, min=1, max=distOffset))
+  
+  angle <- atan2(y, x) - atan2(1, 0)  # * 180 / pi
+  angle <- (angle + runif(1, min=0, max=angleOffset)) # * pi
+#   angle <- (angle + (angleOffset * pi))
+  
+  point <- matrix(NA, nrow=1, ncol=2)
+  point[1, 1] <- round(cos(angle) * distance) # x
+  point[1, 2] <- round(sin(angle) * distance) # y
+  point
+}
 
+numPoints <- 500
+spiralPoints <- data.frame(matrix(NA, nrow=numPoints, ncol=2))
+colnames(spiralPoints) <- c("x", "y")
+spiralPoints[1, ] <- c(10, 10)
+
+for(currentPoint in (2:numPoints)){
+  spiralPoints[currentPoint, ] <- CalcNextPoint(spiralPoints[currentPoint - 1, "x"],
+                                                spiralPoints[currentPoint - 1, "y"])
+}
+
+
+ggplot(spiralPoints, aes(x=x, y=y)) + 
+  geom_point() + 
+  geom_path()
+
+this <- tail(spiralPoints)
+round(sqrt(this$x^2 + this$y^2))

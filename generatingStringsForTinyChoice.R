@@ -7,7 +7,7 @@ library(stringr)
 
 # There's a better way to do this I'm sure
 # generate all possible combination then unique to remove duplicates
-gridSize <- 10
+gridSize <- 4
 pointsOnASmallSquare <- t(combn(rep(seq(gridSize), 2), 2))
 pointsOnASmallSquare <- unique(pointsOnASmallSquare)
 pointsOnASmallSquare <- data_frame(x = pointsOnASmallSquare[, 1], y = pointsOnASmallSquare[, 2])
