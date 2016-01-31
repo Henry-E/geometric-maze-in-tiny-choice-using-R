@@ -13,7 +13,7 @@ colnames(mostCommonWords) <- c("words")
 
 # There's a better way to do this I'm sure
 # generate all possible combination then
-radius <- 10
+radius <- 40
 pointsOnASmallSquare <- t(combn(rep(seq(-radius, radius), 2), 2))
 #  unique to remove duplicates
 pointsOnASmallSquare <- unique(pointsOnASmallSquare)
@@ -66,7 +66,7 @@ newLocations <- data_frame(x = newLocations[, 1],
 portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
 
 # uniformly distributed distance values, min = 1, max = 6
-uniformRandomObservations <- rnorm(nrow(pointsOnASmallSquare), min = 1, max = 6)
+uniformRandomObservations <- runif(nrow(pointsOnASmallSquare), min = 1, max = 6)
 
 newLocations <- CalcNextPoint(pointsOnASmallSquare$x,
                               pointsOnASmallSquare$y,
@@ -142,8 +142,10 @@ for(point in seq(numPoints)){
       pointsOnASmallSquare[point, "name"],
       "=\n",
       # the description, currently only the distance from the centre
-      pointsOnASmallSquare[point, "distance"],
-      "\n")
+      sprintf("%03s", pointsOnASmallSquare[point, "distance"]),
+      " / ",
+      as.character(radius),      
+      "\n\n")
       # loop over all the portal points with labels and destinations
       for(portal in seq(length(portalDestinations))){
         currentPortal <- data.frame(portalDestinations[[portal]])
