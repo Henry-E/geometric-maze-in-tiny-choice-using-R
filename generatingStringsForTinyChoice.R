@@ -13,7 +13,7 @@ colnames(mostCommonWords) <- c("words")
 
 # There's a better way to do this I'm sure
 # generate all possible combination then
-radius <- 40
+radius <- 200
 pointsOnASmallSquare <- t(combn(rep(seq(-radius, radius), 2), 2))
 #  unique to remove duplicates
 pointsOnASmallSquare <- unique(pointsOnASmallSquare)
@@ -99,7 +99,7 @@ for(currentPortal in seq(length(portalDestinations))){
   # calculate the relative distance change for looking up text
   newLocations$relativeDistance <- pointsOnASmallSquare$distance - newLocations$distance
   # add radius + 1 to make sure the indexes are > 0
-  newLocations$relativeDistance <- newLocations$relativeDistance + radius + 1
+  newLocations$relativeDistance <- newLocations$relativeDistance + (radius * 2) + 1
   # sample all the words
   numWords <- max(newLocations$relativeDistance)
   theseWords <- sample_n(mostCommonWords, numWords)
@@ -119,6 +119,7 @@ for(currentPortal in seq(length(portalDestinations))){
   
   # destination string name is all we really care about now
   portalDestinations[[currentPortal]] <- data_frame(destName=destinationName[[1]], label=portalLabels[[1]]) 
+  data_frame(destName=destinationName[[1]], label=portalLabels[[1]]) 
 }
 
 # this is all messing around with dataframes to make the coords into strings
@@ -133,31 +134,35 @@ pointsOnASmallSquare$name <- paste(pointsOnASmallSquare$x, pointsOnASmallSquare$
 # pointsOnASmallSquare$text <- sample(c("l", "r", "u", "d"), numPoints, replace = TRUE)
 
 numPoints <- nrow(pointsOnASmallSquare)
-this <- ""
+portalStrings <- data.frame(matrix("",nrow=numPoints, ncol=1), stringsAsFactors=FALSE)
 
-for(point in seq(numPoints)){
-  this<- str_c(this,
-      # the heading for each point
-      "=", 
-      pointsOnASmallSquare[point, "name"],
-      "=\n",
-      # the description, currently only the distance from the centre
-      sprintf("%03s", pointsOnASmallSquare[point, "distance"]),
-      " / ",
-      as.character(radius),      
-      "\n\n")
-      # loop over all the portal points with labels and destinations
-      for(portal in seq(length(portalDestinations))){
-        currentPortal <- data.frame(portalDestinations[[portal]])
-        this <- str_c(this, 
-                      currentPortal[point, "label"],
-                      " -> ",
-                      currentPortal[point, "destName"],
-                      "\n")
-      }
-      this <- str_c(this, "\n")
+for(portal in seq(length(portalDestinations))){
+  currentPortal <- data.frame(portalDestinations[[portal]])
+  portalStrings <- data_frame(str_c(portalStrings[[1]],
+                         currentPortal$label,
+                         " -> ",
+                         currentPortal$destName,
+                         "\n"), stringsAsFactors = FALSE)
 }
 
+fullGame <- data.frame(matrix("",nrow=numPoints, ncol=1), stringsAsFactors=FALSE)
+
+fullGame <- str_c(fullGame[[1]],
+             # the heading for each point
+             "=", 
+             pointsOnASmallSquare$name,
+             "=\n",
+             # the description, currently only the distance from the centre
+             sprintf("%03s", pointsOnASmallSquare$distance),
+             " / ",
+             as.character(radius),      
+             "\n\n",
+             portalStrings[[1]],
+             "\n"
+             )
+
+fullGame <- str_c(fullGame, collapse="")
+
 sink("output.txt")
-cat(this)
+cat(fullGame)
 sink()
