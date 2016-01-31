@@ -1,17 +1,86 @@
 library(dplyr)
 library(ggplot2)
 library(stringr)
+library(readr)
 
 # load the functions for generating shapes
 # better off keeping them in separate files I think?
+source("spiralGenerationFunctions.r")
+
+mostCommonWords <- read_csv("mostCommonWords.csv")
+colnames(mostCommonWords) <- c("words")
+
 
 # There's a better way to do this I'm sure
-# generate all possible combination then unique to remove duplicates
-gridSize <- 4
-pointsOnASmallSquare <- t(combn(rep(seq(gridSize), 2), 2))
+# generate all possible combination then
+radius <- 3
+pointsOnASmallSquare <- t(combn(rep(seq(-radius, radius), 2), 2))
+#  unique to remove duplicates
 pointsOnASmallSquare <- unique(pointsOnASmallSquare)
 pointsOnASmallSquare <- data_frame(x = pointsOnASmallSquare[, 1], y = pointsOnASmallSquare[, 2])
+# and any points greater than the radius
+pointsOnASmallSquare$distance <-  round(sqrt(pointsOnASmallSquare$x^2 + pointsOnASmallSquare$y^2))
+pointsOnASmallSquare <- filter(pointsOnASmallSquare, distance <= radius)
 # ggplot(pointsOnASmallSquare, aes(x=x, y=y)) + geom_point()
+
+# We're testing out the operations on a data frame first, then
+# expanding out to use a list of data frames, which we loop over
+portalDestinations <- list()
+
+# Poisson distributed distance values, lambda = 4
+poissonRandomObservations <-rpois(nrow(pointsOnASmallSquare), lambda=4)
+
+newLocations <- CalcNextPoint(pointsOnASmallSquare$x,
+                                        pointsOnASmallSquare$y,
+                                        distOffset=poissonRandomObservations)
+newLocations <- data_frame(x = newLocations[, 1], 
+                           y = newLocations[, 2])
+
+portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
+
+randomLocations <- function(numObs, radius) sample(seq(-(radius-1), (radius-1)), numObs, replace = TRUE)
+
+for(currentPortal in seq(length(portalDestinations))){
+  newLocations <- portalDestinations[[currentPortal]]
+  # make sure none of the portalDestinations are off the map
+  newLocations$distance <- round(sqrt(newLocations$x^2 + newLocations$y^2))
+  isOutsideRange <- newLocations$distance > radius
+  numOutsideRange <- sum(isOutsideRange)
+  # if they are replace them with random location inside radius
+  replacementLocations <- data.frame(matrix(NA, nrow=numOutsideRange, ncol=2))
+  colnames(replacementLocations) <- c("x", "y")
+  replacementLocations$x <- randomLocations(numOutsideRange, radius)
+  replacementLocations$y <- randomLocations(numOutsideRange, radius)
+  newLocations[isOutsideRange, "x"] <- replacementLocations$x
+  newLocations[isOutsideRange, "y"] <- replacementLocations$y
+  # just check it all worked out ok
+  newLocations$distance <- round(sqrt(newLocations$x^2 + newLocations$y^2))
+  
+  # calculate the relative distance change for looking up text
+  newLocations$relativeDistance <- pointsOnASmallSquare$distance - newLocations$distance
+  # add radius + 1 to make sure the indexes are > 0
+  newLocations$relativeDistance <- newLocations$relativeDistance + radius + 1
+  # sample all the words
+  numWords <- max(newLocations$relativeDistance)
+  theseWords <- sample_n(mostCommonWords, numWords)
+  # make sure these words aren't sampled again, this doesn't work right now
+  # mostCommonWords <- mostCommonWords[!(mostCommonWords %in% theseWords)]
+  portalLabels <- theseWords[newLocations$relativeDistance, ]
+  
+  
+  # convert the x, y coords in the their concatenated string name
+  newLocations <- newLocations[c("x", "y")]
+  newLocations <- data.frame(lapply(newLocations, as.character), stringsAsFactors=FALSE)
+  destinationName <- data_frame(name = paste(newLocations$x, newLocations$y, sep = ","))
+  
+  # destination string name is all we really care about now
+  portalDestinations[[currentPortal]] <- data_frame(destName=destinationName[[1]], label=portalLabels[[1]])
+  
+}
+# this will take place in the looping
+# newLocations$distance <- round(sqrt(newLocations$x^2 + newLocations$y^2))
+
+
 
 # this is all messing around with dataframes to make the coords into strings
 pointsOnASmallSquare <- data.frame(lapply(pointsOnASmallSquare, as.character), stringsAsFactors=FALSE)

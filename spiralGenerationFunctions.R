@@ -68,35 +68,37 @@ GeneratePointsOnASpiral <- function(
 #   scale_y_discrete()
 
 # function that calculates the next point in the spiral
-CalcNextPoint <- function(x=0, y=0, angleOffset = 1, distOffset = 10, clockwise = 1 ){
+CalcNextPoint <- function(x=0, y=0, angleOffset = 1, distOffset = 10){
   distance <- sqrt(x^2 + y^2)
-#   clockwise <- sample(c(-1, 1), 1)
-  distance <- clockwise * (distance + runif(1, min=1, max=distOffset))
+  clockwise <- sample(c(-1, 1), 1)
+  distance <- clockwise * (distance + distOffset)
   
   angle <- atan2(y, x) - atan2(1, 0)  # * 180 / pi
   angle <- (angle + runif(1, min=0, max=angleOffset)) # * pi
 #   angle <- (angle + (angleOffset * pi))
   
-  point <- matrix(NA, nrow=1, ncol=2)
-  point[1, 1] <- round(cos(angle) * distance) # x
-  point[1, 2] <- round(sin(angle) * distance) # y
+  point <- matrix(NA, nrow=length(x), ncol=2)
+  point[, 1] <- round(cos(angle) * distance) # x
+  point[, 2] <- round(sin(angle) * distance) # y
   point
 }
-
-numPoints <- 500
-spiralPoints <- data.frame(matrix(NA, nrow=numPoints, ncol=2))
-colnames(spiralPoints) <- c("x", "y")
-spiralPoints[1, ] <- c(10, 10)
-
-for(currentPoint in (2:numPoints)){
-  spiralPoints[currentPoint, ] <- CalcNextPoint(spiralPoints[currentPoint - 1, "x"],
-                                                spiralPoints[currentPoint - 1, "y"])
-}
-
-
-ggplot(spiralPoints, aes(x=x, y=y)) + 
-  geom_point() + 
-  geom_path()
-
-this <- tail(spiralPoints)
-round(sqrt(this$x^2 + this$y^2))
+# 
+# numPoints <- 500
+# spiralPoints <- data.frame(matrix(NA, nrow=numPoints, ncol=2))
+# colnames(spiralPoints) <- c("x", "y")
+# spiralPoints[1, ] <- c(10, 10)
+# 
+# for(currentPoint in (2:numPoints)){
+#   spiralPoints[currentPoint, ] <- CalcNextPoint(spiralPoints[currentPoint - 1, "x"],
+#                                                 spiralPoints[currentPoint - 1, "y"],
+#                                                 distOffset=rpois(1, lambda=4))
+# }
+# 
+# 
+# ggplot(spiralPoints, aes(x=x, y=y)) + 
+#   geom_point() + 
+#   geom_path()
+# 
+# this <- head(spiralPoints)
+# round(sqrt(this$x^2 + this$y^2))
+# round(sqrt(pointsOnASmallSquare$x^2 + pointsOnASmallSquare$y^2))
