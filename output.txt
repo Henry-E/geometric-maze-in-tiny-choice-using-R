@@ -1,0 +1,2443 @@
+=0,0=
+0
+effective -> 2,-3
+normally -> -3,3
+million -> -1,6
+think -> -1,6
+
+=0,1=
+1
+angry -> 5,3
+adviser -> -3,-3
+rise -> 9,2
+spot -> 9,2
+
+=0,-1=
+1
+particularly -> -3,-2
+legend -> 2,2
+powder -> -2,0
+drive -> -2,0
+
+=0,2=
+2
+muscle -> 7,4
+cool -> -2,-2
+Internet -> -1,0
+fabric -> -1,0
+
+=0,-2=
+2
+criminal -> -8,-5
+normally -> 6,2
+approve -> -2,0
+accomplish -> -2,0
+
+=0,3=
+3
+particularly -> 5,3
+circle -> 1,1
+tire -> 10,2
+marine -> 10,2
+
+=0,-3=
+3
+angry -> -7,-4
+normally -> 5,5
+Internet -> -2,0
+fabric -> -2,0
+
+=0,4=
+4
+plastic -> 5,3
+corporation -> -2,-4
+serious -> 9,2
+examine -> 9,2
+
+=0,-4=
+4
+effective -> -7,-4
+adviser -> 5,5
+product -> -1,0
+priority -> -1,0
+
+=0,5=
+5
+plastic -> 6,4
+corporation -> -4,3
+product -> -2,-1
+priority -> -2,-1
+
+=0,-5=
+5
+particularly -> -7,4
+coordinate -> -8,-6
+push -> -7,-2
+them -> -7,-2
+
+=0,6=
+6
+overnight -> 6,4
+adviser -> -6,-7
+push -> 8,2
+them -> 8,2
+
+=0,-6=
+6
+particularly -> -8,-5
+cool -> 4,-6
+push -> -8,-2
+them -> -8,-2
+
+=0,7=
+7
+effective -> 7,-8
+unexpected -> -9,-9
+approve -> 7,2
+accomplish -> 7,2
+
+=0,-7=
+7
+plastic -> -8,-5
+legend -> 6,7
+push -> -9,-2
+them -> -9,-2
+
+=0,8=
+8
+parental -> -5,2
+legend -> -7,-7
+bicycle -> 4,1
+photo -> 4,1
+
+=0,-8=
+8
+overnight -> 8,3
+meaning -> 5,0
+diamond -> -9,7
+them -> 8,6
+
+=0,9=
+9
+plastic -> 7,-9
+adviser -> -9,8
+product -> 6,1
+priority -> 6,1
+
+=0,-9=
+9
+mouse -> -9,-3
+exceed -> -1,-8
+approve -> 4,8
+accomplish -> -6,7
+
+=0,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=0,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-1,0=
+1
+overnight -> -1,2
+adviser -> 3,-3
+boss -> -1,5
+installation -> -1,5
+
+=1,0=
+1
+particularly -> 2,-3
+specialty -> -7,7
+Internet -> 0,0
+fabric -> 0,0
+
+=-1,1=
+1
+angry -> 1,6
+unexpected -> -7,-2
+diamond -> 2,4
+vital -> 2,4
+
+=-1,-1=
+1
+particularly -> -4,1
+normally -> 5,0
+approve -> 1,-1
+accomplish -> 1,-1
+
+=1,-1=
+1
+particularly -> -1,-4
+unexpected -> 0,7
+diamond -> -2,-4
+vital -> -2,-4
+
+=1,1=
+1
+angry -> 6,-1
+abstract -> -8,0
+Internet -> 0,0
+fabric -> 0,0
+
+=-1,2=
+2
+particularly -> 3,4
+unexpected -> -3,7
+powder -> -2,-2
+drive -> -2,-2
+
+=-1,-2=
+2
+plastic -> -4,0
+unexpected -> 7,4
+Internet -> 1,0
+fabric -> 1,0
+
+=1,2=
+2
+effective -> 6,1
+legend -> 3,-3
+powder -> 3,-1
+drive -> 3,-1
+
+=1,-2=
+2
+plastic -> -2,-4
+adviser -> 2,5
+push -> -3,-3
+them -> -3,-3
+
+=-1,3=
+3
+particularly -> 4,5
+coordinate -> -3,-7
+million -> 8,5
+think -> 8,5
+
+=-1,-3=
+3
+particularly -> -6,-1
+ruin -> -9,7
+Internet -> -2,0
+fabric -> -2,0
+
+=1,3=
+3
+effective -> 7,2
+unexpected -> -9,-3
+push -> 5,-1
+them -> 5,-1
+
+=1,-3=
+3
+angry -> -5,-6
+cool -> 2,3
+powder -> -4,-2
+drive -> -4,-2
+
+=-1,4=
+4
+angry -> 6,7
+coordinate -> -5,-7
+guideline -> 2,1
+exception -> 2,1
+
+=-1,-4=
+4
+angry -> -9,-3
+normally -> -5,6
+push -> -6,0
+them -> -6,0
+
+=1,4=
+4
+particularly -> 7,2
+circle -> 2,-1
+Internet -> 3,0
+fabric -> 3,0
+
+=1,-4=
+4
+particularly -> -5,-5
+adviser -> 3,6
+Internet -> -3,-1
+fabric -> -3,-1
+
+=-1,5=
+5
+angry -> 7,7
+exceed -> 0,-4
+approve -> 5,2
+accomplish -> 5,2
+
+=-1,-5=
+5
+overnight -> -6,-2
+normally -> 7,5
+boss -> -9,0
+installation -> -9,0
+
+=1,5=
+5
+angry -> 9,4
+corporation -> -5,1
+product -> -2,0
+priority -> -2,0
+
+=1,-5=
+5
+overnight -> -4,-4
+legend -> -3,-6
+serious -> -9,-4
+examine -> -9,-4
+
+=-1,6=
+6
+angry -> 8,8
+adviser -> -5,-7
+dismiss -> -1,0
+them -> -7,-3
+
+=-1,-6=
+6
+effective -> -9,-4
+circle -> 2,3
+guideline -> -4,0
+exception -> -4,0
+
+=1,6=
+6
+effective -> 9,4
+cool -> 6,4
+Internet -> 5,0
+fabric -> 5,0
+
+=1,-6=
+6
+plastic -> -6,-5
+adviser -> 5,7
+dismiss -> -1,-1
+them -> 8,0
+
+=-1,7=
+7
+particularly -> 8,6
+corporation -> 7,0
+push -> 8,3
+them -> 8,3
+
+=-1,-7=
+7
+plastic -> -9,-2
+legend -> 7,6
+guideline -> -5,0
+exception -> -5,0
+
+=1,7=
+7
+effective -> -7,-8
+cool -> 3,-7
+hard -> 1,0
+command -> 1,0
+
+=1,-7=
+7
+plastic -> -7,-6
+meaning -> -3,-2
+guideline -> -5,-2
+exception -> -5,-2
+
+=-1,8=
+8
+overnight -> -9,-2
+cool -> 9,3
+powder -> 9,3
+drive -> 9,3
+
+=-1,-8=
+8
+city -> 7,-1
+circle -> 6,2
+push -> -10,-1
+them -> -10,-1
+
+=1,8=
+8
+mouse -> 8,-1
+cool -> 8,4
+approve -> -8,-1
+accomplish -> 6,6
+
+=1,-8=
+8
+affair -> -2,2
+corporation -> 6,-6
+Internet -> 2,-7
+exception -> 6,0
+
+=-1,9=
+9
+overnight -> 8,6
+left -> -2,-1
+product -> 6,2
+priority -> 6,2
+
+=-1,-9=
+9
+plastic -> 8,7
+legend -> -7,-8
+hard -> 0,3
+drive -> -7,-7
+
+=1,9=
+9
+fairly -> 5,1
+corporation -> -3,-8
+Internet -> 8,1
+fabric -> 8,1
+
+=1,-9=
+9
+overnight -> -8,-6
+meaning -> 5,-3
+powder -> -10,-3
+drive -> -10,-3
+
+=-1,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-1,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=1,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=1,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-2,0=
+2
+effective -> -3,5
+abstract -> 7,-6
+Internet -> 0,1
+fabric -> 0,1
+
+=2,0=
+2
+particularly -> 3,-4
+legend -> -3,2
+boss -> 1,-6
+installation -> 1,-6
+
+=-2,-1=
+2
+muscle -> -7,4
+coordinate -> 7,-2
+million -> -5,6
+think -> -5,6
+
+=-2,1=
+2
+belt -> -1,10
+corporation -> -2,1
+approve -> 0,-2
+accomplish -> 0,-2
+
+=2,-1=
+2
+belt -> 1,-10
+unexpected -> -3,7
+push -> -1,-4
+them -> -1,-4
+
+=2,1=
+2
+plastic -> 4,-2
+legend -> -4,1
+boss -> 4,-5
+installation -> 4,-5
+
+=-2,2=
+3
+effective -> 2,7
+unexpected -> -9,2
+Internet -> 1,2
+fabric -> 1,2
+
+=-2,-2=
+3
+plastic -> -5,1
+coordinate -> -7,-4
+push -> -4,3
+them -> -4,3
+
+=2,-2=
+3
+effective -> -2,-7
+abstract -> 0,10
+Internet -> -1,-2
+fabric -> -1,-2
+
+=2,2=
+3
+effective -> 7,-2
+abstract -> -10,0
+diamond -> -5,3
+vital -> -5,3
+
+=-2,3=
+4
+effective -> 3,7
+cool -> -1,-5
+push -> 4,4
+them -> 4,4
+
+=-2,-3=
+4
+plastic -> -6,0
+adviser -> 7,2
+powder -> -5,2
+drive -> -5,2
+
+=2,3=
+4
+mouse -> -3,-2
+corporation -> -4,-1
+powder -> 5,-2
+drive -> 5,-2
+
+=2,-3=
+4
+city -> 2,-2
+coordinate -> 5,7
+product -> 0,1
+priority -> 0,1
+
+=-2,4=
+4
+plastic -> 3,5
+coordinate -> -8,3
+product -> 1,1
+priority -> 1,1
+
+=-2,-4=
+4
+overnight -> -5,-1
+corporation -> 2,4
+serious -> -9,2
+examine -> -9,2
+
+=2,4=
+4
+overnight -> 5,1
+ruin -> 9,8
+push -> 6,-1
+them -> 6,-1
+
+=2,-4=
+4
+effective -> -4,-7
+exceed -> 1,-3
+serious -> -7,-5
+examine -> -7,-5
+
+=-2,5=
+5
+mouse -> 0,5
+coordinate -> -4,-9
+serious -> 8,6
+examine -> 8,6
+
+=-2,-5=
+5
+angry -> -10,-2
+cool -> -6,-1
+powder -> -6,1
+drive -> -6,1
+
+=2,5=
+5
+effective -> 9,2
+legend -> -6,-3
+powder -> 6,-1
+drive -> 6,-1
+
+=2,-5=
+5
+angry -> -6,-8
+normally -> -9,2
+Internet -> -3,-2
+fabric -> -3,-2
+
+=-2,6=
+6
+plastic -> 5,6
+corporation -> 3,5
+bicycle -> 2,1
+photo -> 2,1
+
+=-2,-6=
+6
+effective -> -10,-2
+legend -> -7,-4
+approve -> -6,1
+accomplish -> -6,1
+
+=2,6=
+6
+effective -> 10,2
+meaning -> -2,2
+guideline -> 4,0
+exception -> 4,0
+
+=2,-6=
+6
+particularly -> -6,-7
+normally -> 4,9
+approve -> -5,-3
+accomplish -> -5,-3
+
+=-2,7=
+7
+city -> -5,3
+exam -> -2,0
+approve -> 6,3
+accomplish -> 6,3
+
+=-2,-7=
+7
+plastic -> -9,-3
+cool -> 7,4
+push -> -9,1
+them -> -9,1
+
+=2,7=
+7
+plastic -> -9,0
+legend -> -6,-7
+product -> 4,2
+exception -> -1,5
+
+=2,-7=
+7
+plastic -> -6,-7
+corporation -> 0,-7
+product -> -4,-2
+priority -> -4,-2
+
+=-2,8=
+8
+plastic -> 7,7
+legend -> 7,-7
+powder -> 8,4
+drive -> 8,4
+
+=-2,-8=
+8
+plastic -> -10,-3
+meaning -> 3,-4
+approve -> -8,0
+accomplish -> -8,0
+
+=2,8=
+8
+plastic -> 10,3
+adviser -> 9,-6
+approve -> 8,0
+accomplish -> 8,0
+
+=2,-8=
+8
+mouse -> -5,6
+cool -> -1,9
+Internet -> -6,-3
+fabric -> -6,-3
+
+=-2,9=
+9
+tennis -> -2,1
+exceed -> 3,-7
+approve -> 8,4
+accomplish -> 8,4
+
+=-2,-9=
+9
+mouse -> -3,-8
+corporation -> 3,9
+product -> -3,-5
+accomplish -> 7,5
+
+=2,9=
+9
+mouse -> 0,-9
+circle -> -6,-3
+product -> -1,-6
+accomplish -> 9,1
+
+=2,-9=
+9
+mouse -> 3,-8
+adviser -> 9,8
+dismiss -> -4,-2
+star -> -4,-2
+
+=-2,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-2,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=2,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=2,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-3,0=
+3
+effective -> -4,6
+adviser -> 5,-4
+product -> 0,0
+priority -> 0,0
+
+=3,0=
+3
+particularly -> 3,-5
+cool -> -3,3
+product -> 0,0
+priority -> 0,0
+
+=-3,-1=
+3
+angry -> -6,5
+ruin -> -6,9
+powder -> 2,4
+vital -> 0,6
+
+=-3,1=
+3
+plastic -> -1,5
+normally -> 3,-6
+diamond -> 1,6
+vital -> 1,6
+
+=3,-1=
+3
+effective -> 2,-7
+cool -> -2,4
+powder -> 0,-4
+drive -> 0,-4
+
+=3,1=
+3
+particularly -> 5,-4
+unexpected -> -3,9
+powder -> 2,-4
+drive -> 2,-4
+
+=-3,-2=
+4
+effective -> -7,3
+unexpected -> 10,-2
+push -> -4,4
+them -> -4,4
+
+=-3,2=
+4
+effective -> -8,-1
+coordinate -> 9,-1
+product -> 0,-1
+priority -> 0,-1
+
+=3,-2=
+4
+mouse -> 0,-4
+normally -> -1,8
+powder -> -2,-5
+drive -> -2,-5
+
+=3,2=
+4
+parental -> 1,0
+cool -> -5,1
+push -> 5,-4
+them -> 5,-4
+
+=-3,3=
+4
+effective -> 2,8
+coordinate -> -9,-1
+product -> 1,1
+priority -> 1,1
+
+=-3,-3=
+4
+plastic -> -6,1
+cool -> 5,1
+push -> -5,3
+them -> -5,3
+
+=3,-3=
+4
+effective -> -2,-8
+cool -> 2,-5
+approve -> -2,-3
+accomplish -> -2,-3
+
+=3,3=
+4
+muscle -> 10,-2
+normally -> 6,-6
+approve -> 4,-2
+accomplish -> 4,-2
+
+=-3,4=
+5
+particularly -> 3,7
+normally -> 9,2
+boss -> 6,7
+installation -> 6,7
+
+=-3,-4=
+5
+overnight -> -6,1
+adviser -> 8,1
+serious -> -9,4
+examine -> -9,4
+
+=3,4=
+5
+plastic -> 7,-1
+coordinate -> 6,-8
+push -> 6,-3
+them -> 6,-3
+
+=3,-4=
+5
+overnight -> -2,-6
+exceed -> -3,-2
+Internet -> -3,-3
+fabric -> -3,-3
+
+=-3,5=
+6
+overnight -> 5,-5
+legend -> -2,-8
+push -> 6,5
+them -> 6,5
+
+=-3,-5=
+6
+effective -> -10,0
+exceed -> -5,2
+bicycle -> -2,1
+photo -> -2,1
+
+=3,5=
+6
+mouse -> -2,6
+corporation -> -6,-2
+approve -> 6,-2
+accomplish -> 6,-2
+
+=3,-5=
+6
+particularly -> -4,-8
+adviser -> 2,9
+approve -> -5,-4
+accomplish -> -5,-4
+
+=-3,6=
+7
+plastic -> 6,-7
+cool -> -2,-8
+diamond -> 8,6
+vital -> 8,6
+
+=-3,-6=
+7
+effective -> -7,-9
+legend -> 9,3
+dismiss -> -2,1
+star -> -2,1
+
+=3,6=
+7
+effective -> 7,8
+circle -> -3,4
+approve -> 7,-2
+accomplish -> 7,-2
+
+=3,-6=
+7
+plastic -> -5,-8
+exceed -> -6,1
+powder -> -6,-5
+drive -> -6,-5
+
+=-3,7=
+8
+plastic -> 6,8
+exceed -> -1,-7
+powder -> 7,5
+drive -> 7,5
+
+=-3,-7=
+8
+overnight -> -9,-3
+circle -> 1,-6
+bicycle -> -4,1
+photo -> -4,1
+
+=3,7=
+8
+plastic -> 10,1
+sit -> 1,-2
+guideline -> -6,-2
+exception -> 5,-3
+
+=3,-7=
+8
+plastic -> -6,-8
+cool -> -4,-8
+guideline -> -5,-4
+exception -> -5,-4
+
+=-3,8=
+9
+overnight -> 4,9
+cool -> -4,-9
+approve -> 6,-7
+photo -> 3,4
+
+=-3,-8=
+9
+overnight -> -10,-2
+circle -> -4,6
+Internet -> -6,5
+drive -> 9,-5
+
+=3,8=
+9
+overnight -> 10,2
+weakness -> -1,5
+bicycle -> 5,0
+exception -> 7,0
+
+=3,-8=
+9
+tennis -> 2,0
+meaning -> 6,-2
+approve -> -8,-5
+accomplish -> -8,-5
+
+=-3,9=
+9
+fence -> -2,-7
+exceed -> 7,3
+approve -> 8,5
+accomplish -> 8,5
+
+=-3,-9=
+9
+city -> 1,8
+sit -> -1,3
+bicycle -> -5,2
+drive -> 8,-6
+
+=3,9=
+9
+fairly -> 2,5
+sit -> 1,3
+product -> 0,6
+exception -> 7,2
+
+=3,-9=
+9
+parental -> 0,-6
+meaning -> 6,-1
+guideline -> 6,4
+star -> 1,4
+
+=-3,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-3,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=3,10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=3,-10=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-4,0=
+4
+effective -> -4,7
+unexpected -> 7,-7
+bicycle -> 0,0
+photo -> 0,0
+
+=4,0=
+4
+effective -> 4,-7
+adviser -> -2,-7
+push -> 1,-6
+them -> 1,-6
+
+=-4,-1=
+4
+particularly -> -5,5
+coordinate -> 5,7
+product -> 1,-1
+priority -> 1,-1
+
+=-4,1=
+4
+effective -> -6,-6
+adviser -> 4,-6
+boss -> 0,8
+installation -> 0,8
+
+=4,-1=
+4
+angry -> 3,-9
+cool -> 1,5
+product -> 0,1
+priority -> 0,1
+
+=4,1=
+4
+angry -> 7,-6
+abstract -> 6,-9
+push -> 3,-5
+them -> 3,-5
+
+=-4,-2=
+4
+particularly -> -6,4
+unexpected -> 10,-3
+product -> -1,1
+priority -> -1,1
+
+=-4,2=
+4
+particularly -> -1,7
+coordinate -> 3,-9
+diamond -> 2,7
+vital -> 2,7
+
+=4,-2=
+4
+criminal -> -9,-7
+legend -> -2,6
+approve -> -1,-4
+accomplish -> -1,-4
+
+=4,2=
+4
+particularly -> 6,-3
+normally -> -8,2
+approve -> 3,-3
+accomplish -> 3,-3
+
+=-4,-3=
+5
+particularly -> -7,3
+coordinate -> 10,-1
+guideline -> -2,2
+exception -> -2,2
+
+=-4,3=
+5
+plastic -> 1,7
+exceed -> -4,2
+tire -> 9,8
+installation -> 9,-2
+
+=4,-3=
+5
+effective -> -1,-9
+legend -> 3,6
+guideline -> -1,-3
+exception -> -1,-3
+
+=4,3=
+5
+overnight -> -4,-4
+abstract -> -9,8
+dismiss -> 0,0
+star -> 0,0
+
+=-4,4=
+6
+mouse -> -6,-1
+adviser -> 9,0
+Internet -> 3,4
+fabric -> 3,4
+
+=-4,-4=
+6
+mouse -> -6,2
+adviser -> 9,-2
+product -> -2,2
+priority -> -2,2
+
+=4,-4=
+6
+effective -> -2,-10
+legend -> 0,8
+approve -> -3,-5
+accomplish -> -3,-5
+
+=4,4=
+6
+overnight -> 7,-2
+coordinate -> 6,9
+guideline -> -4,0
+fabric -> 2,5
+
+=-4,5=
+6
+overnight -> 2,7
+adviser -> -1,-9
+diamond -> 6,7
+vital -> 6,7
+
+=-4,-5=
+6
+particularly -> -7,-6
+normally -> 10,1
+guideline -> -4,2
+exception -> -4,2
+
+=4,5=
+6
+plastic -> 8,-1
+unexpected -> 9,8
+push -> 7,-4
+them -> 7,-4
+
+=4,-5=
+6
+particularly -> -3,-8
+corporation -> 5,-4
+push -> -5,-6
+them -> -5,-6
+
+=-4,6=
+7
+fence -> 5,2
+exceed -> 1,6
+diamond -> 8,6
+exception -> 3,-4
+
+=-4,-6=
+7
+plastic -> -9,0
+corporation -> -6,-3
+diamond -> 8,-6
+installation -> 8,7
+
+=4,6=
+7
+particularly -> 10,0
+adviser -> 8,-6
+product -> 4,-2
+priority -> 4,-2
+
+=4,-6=
+7
+angry -> -8,-9
+sit -> 0,-1
+push -> -6,-7
+them -> -6,-7
+
+=-4,7=
+8
+fairly -> 0,-4
+adviser -> 8,7
+guideline -> 5,4
+exception -> 5,4
+
+=-4,-7=
+8
+plastic -> -10,0
+cool -> 7,-5
+powder -> -9,3
+drive -> -9,3
+
+=4,7=
+8
+fence -> -3,5
+corporation -> 1,8
+powder -> 9,-3
+drive -> 9,-3
+
+=4,-7=
+8
+plastic -> -5,-9
+corporation -> 4,-7
+powder -> -7,-6
+drive -> -7,-6
+
+=-4,8=
+9
+plastic -> 9,6
+legend -> 8,-7
+Internet -> 6,5
+fabric -> 6,5
+
+=-4,-8=
+9
+plastic -> -9,7
+meaning -> 4,-5
+product -> -6,1
+priority -> -6,1
+
+=4,8=
+9
+tennis -> -1,2
+exceed -> 6,-5
+guideline -> 7,-2
+exception -> 7,-2
+
+=4,-8=
+9
+fairly -> -1,-5
+cool -> -6,-8
+Internet -> -6,-5
+fabric -> -6,-5
+
+=-4,9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-4,-9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=4,9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=4,-9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-5,0=
+5
+particularly -> -4,7
+ruin -> -9,-9
+approve -> -1,5
+accomplish -> -1,5
+
+=5,0=
+5
+angry -> -8,6
+meaning -> 1,-2
+guideline -> 1,-3
+exception -> 1,-3
+
+=-5,-1=
+5
+effective -> -6,7
+weakness -> 0,1
+powder -> -2,6
+drive -> -2,6
+
+=-5,1=
+5
+effective -> -3,8
+abstract -> 8,9
+approve -> 0,5
+accomplish -> 0,5
+
+=5,-1=
+5
+parental -> 1,2
+coordinate -> -7,-7
+bicycle -> 0,-1
+photo -> 0,-1
+
+=5,1=
+5
+plastic -> 5,-5
+unexpected -> 8,8
+guideline -> 1,-3
+exception -> 1,-3
+
+=-5,-2=
+5
+effective -> -7,5
+corporation -> -5,-2
+push -> -4,6
+them -> -4,6
+
+=-5,2=
+5
+angry -> -2,10
+adviser -> -3,-7
+approve -> 1,5
+accomplish -> 1,5
+
+=5,-2=
+5
+effective -> 2,-9
+normally -> -4,8
+powder -> -1,-6
+drive -> -1,-6
+
+=5,2=
+5
+angry -> 8,-6
+legend -> -7,2
+Internet -> 2,-3
+fabric -> 2,-3
+
+=-5,-3=
+6
+overnight -> -6,3
+normally -> 10,-2
+guideline -> -3,3
+exception -> -3,3
+
+=-5,3=
+6
+particularly -> 8,-3
+adviser -> 3,-9
+diamond -> 3,8
+vital -> 3,8
+
+=5,-3=
+6
+plastic -> 0,-8
+exam -> 1,0
+product -> -1,-3
+priority -> -1,-3
+
+=5,3=
+6
+overnight -> 6,-3
+normally -> -10,2
+approve -> 4,-4
+accomplish -> 4,-4
+
+=-5,-4=
+6
+particularly -> -9,3
+legend -> 8,-1
+serious -> 7,-9
+drive -> 4,-6
+
+=-5,4=
+6
+fairly -> 2,1
+adviser -> 1,-9
+push -> 4,7
+them -> 4,7
+
+=5,-4=
+6
+particularly -> -1,-9
+adviser -> 8,-5
+boss -> -4,-9
+installation -> -4,-9
+
+=5,4=
+6
+effective -> 10,-3
+legend -> 4,-7
+push -> 6,-5
+them -> 6,-5
+
+=-5,5=
+7
+plastic -> 2,9
+corporation -> -7,-2
+product -> 2,3
+priority -> 2,3
+
+=-5,-5=
+7
+plastic -> -9,2
+adviser -> 10,0
+hard -> -1,1
+command -> -1,1
+
+=5,-5=
+7
+fairly -> 2,2
+adviser -> 0,10
+product -> -2,-3
+priority -> -2,-3
+
+=5,5=
+7
+plastic -> 9,-2
+legend -> -1,-9
+push -> 7,-5
+them -> 7,-5
+
+=-5,6=
+8
+overnight -> 3,-8
+meaning -> -3,4
+guideline -> 4,5
+exception -> 4,5
+
+=-5,-6=
+8
+overnight -> -9,1
+legend -> 10,1
+guideline -> -5,3
+exception -> -5,3
+
+=5,6=
+8
+fence -> 5,-3
+legend -> 8,-6
+powder -> 8,-4
+drive -> 8,-4
+
+=5,-6=
+8
+plastic -> -9,4
+legend -> 1,10
+powder -> -6,-7
+drive -> -6,-7
+
+=-5,7=
+9
+city -> 2,8
+corporation -> 2,9
+guideline -> 5,5
+exception -> 5,5
+
+=-5,-7=
+9
+fence -> 0,7
+exam -> -3,3
+approve -> -8,3
+accomplish -> -8,3
+
+=5,7=
+9
+plastic -> -9,6
+corporation -> 6,7
+riot -> -1,2
+vital -> -9,8
+
+=5,-7=
+9
+mouse -> -7,-6
+corporation -> 1,-9
+product -> -4,-5
+priority -> -4,-5
+
+=-5,8=
+9
+overnight -> -6,8
+adviser -> -9,-8
+riot -> -2,1
+accomplish -> -5,-8
+
+=-5,-8=
+9
+parental -> 6,1
+exam -> 4,1
+guideline -> -7,2
+exception -> -7,2
+
+=5,8=
+9
+fence -> -1,7
+exceed -> -5,-6
+bicycle -> -1,-5
+priority -> 0,-6
+
+=5,-8=
+9
+fence -> 7,0
+corporation -> -5,8
+product -> -4,-4
+priority -> -4,-4
+
+=-5,9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-5,-9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=5,9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=5,-9=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-6,0=
+6
+particularly -> -3,-9
+corporation -> 5,-4
+diamond -> -2,9
+vital -> -2,9
+
+=6,0=
+6
+particularly -> 5,-8
+legend -> -6,6
+product -> 1,-3
+priority -> 1,-3
+
+=-6,-1=
+6
+plastic -> 8,-1
+unexpected -> 8,9
+push -> -3,7
+them -> -3,7
+
+=-6,1=
+6
+plastic -> -3,7
+normally -> 6,-8
+bicycle -> 0,2
+photo -> 0,2
+
+=6,-1=
+6
+plastic -> 3,-7
+normally -> -6,8
+Internet -> 0,-5
+fabric -> 0,-5
+
+=6,1=
+6
+plastic -> 6,6
+unexpected -> -9,8
+product -> 1,-3
+priority -> 1,-3
+
+=-6,-2=
+6
+particularly -> -7,6
+legend -> 7,-3
+boss -> -5,9
+installation -> -5,9
+
+=-6,2=
+6
+effective -> -2,10
+legend -> 4,-7
+approve -> 1,6
+accomplish -> 1,6
+
+=6,-2=
+6
+plastic -> 2,-8
+adviser -> 2,9
+powder -> -1,-7
+drive -> -1,-7
+
+=6,2=
+6
+particularly -> 7,-6
+adviser -> -8,4
+guideline -> 2,-4
+exception -> 2,-4
+
+=-6,-3=
+7
+parental -> -2,-4
+legend -> 9,-3
+riot -> 0,0
+trouble -> 0,0
+
+=-6,3=
+7
+plastic -> -1,-9
+legend -> 3,-9
+approve -> 2,7
+accomplish -> 2,7
+
+=6,-3=
+7
+plastic -> 5,-7
+normally -> 7,-9
+product -> -1,-4
+priority -> -1,-4
+
+=6,3=
+7
+parental -> 4,1
+legend -> -1,-9
+guideline -> -3,4
+exception -> 3,-4
+
+=-6,-4=
+7
+particularly -> -9,4
+unexpected -> 9,9
+product -> -3,3
+priority -> -3,3
+
+=-6,4=
+7
+overnight -> 0,8
+cool -> 8,1
+Internet -> 2,6
+fabric -> 2,6
+
+=6,-4=
+7
+overnight -> 0,-8
+meaning -> -1,4
+product -> -2,-4
+priority -> -2,-4
+
+=6,4=
+7
+plastic -> 8,-4
+legend -> 6,7
+powder -> 6,-6
+drive -> 6,-6
+
+=-6,-5=
+8
+overnight -> -9,3
+weakness -> -1,-4
+bicycle -> -3,2
+photo -> -3,2
+
+=-6,5=
+8
+fence -> 0,6
+adviser -> -7,-8
+push -> 5,9
+them -> 5,9
+
+=6,-5=
+8
+mouse -> -5,-6
+corporation -> 3,7
+powder -> 2,-9
+drive -> -8,-5
+
+=6,5=
+8
+overnight -> 8,-3
+corporation -> 8,2
+guideline -> 5,-4
+exception -> 5,-4
+
+=-6,6=
+8
+mouse -> 6,-5
+normally -> -8,-9
+product -> 3,4
+priority -> 3,4
+
+=-6,-6=
+8
+plastic -> -10,2
+circle -> 2,6
+powder -> -7,5
+drive -> -7,5
+
+=6,-6=
+8
+city -> 6,-3
+weakness -> 2,3
+approve -> -4,-7
+accomplish -> -4,-7
+
+=6,6=
+8
+particularly -> -7,-9
+cool -> -9,0
+push -> -9,4
+fabric -> 7,-2
+
+=-6,7=
+9
+overnight -> 3,10
+meaning -> -4,4
+approve -> 5,7
+accomplish -> 5,7
+
+=-6,-7=
+9
+devil -> 2,2
+meaning -> -5,-4
+approve -> 1,-9
+fabric -> -4,7
+
+=6,7=
+9
+city -> -1,-8
+meaning -> -4,-4
+riot -> -2,1
+drive -> 4,-9
+
+=6,-7=
+9
+fence -> 2,-7
+cool -> -4,9
+powder -> -6,-8
+drive -> -6,-8
+
+=-6,8=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-6,-8=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=6,8=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=6,-8=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-7,0=
+7
+effective -> 7,9
+legend -> -4,8
+Internet -> -1,6
+fabric -> -1,6
+
+=7,0=
+7
+effective -> 7,-9
+sit -> -1,0
+powder -> 2,-8
+drive -> 2,-8
+
+=-7,-1=
+7
+plastic -> -9,2
+circle -> 1,-5
+push -> -3,9
+them -> -3,9
+
+=-7,1=
+7
+particularly -> -4,9
+exceed -> 1,6
+powder -> 0,-8
+accomplish -> -5,5
+
+=7,-1=
+7
+particularly -> 4,-9
+meaning -> 1,-4
+push -> 1,-9
+them -> 1,-9
+
+=7,1=
+7
+overnight -> -8,1
+adviser -> 6,8
+powder -> 3,-7
+drive -> 3,-7
+
+=-7,-2=
+7
+overnight -> -6,6
+adviser -> 9,-5
+approve -> -3,6
+accomplish -> -3,6
+
+=-7,2=
+7
+overnight -> -2,8
+adviser -> 5,-9
+Internet -> 0,6
+fabric -> 0,6
+
+=7,-2=
+7
+overnight -> 2,-8
+cool -> 4,-7
+powder -> 0,-8
+drive -> 0,-8
+
+=7,2=
+7
+parental -> -3,-3
+legend -> 5,8
+bicycle -> 1,-3
+photo -> 1,-3
+
+=-7,-3=
+8
+plastic -> -8,6
+legend -> -8,-6
+push -> -6,8
+them -> -6,8
+
+=-7,3=
+8
+parental -> -1,-5
+corporation -> -2,-8
+Internet -> 1,7
+fabric -> 1,7
+
+=7,-3=
+8
+plastic -> 2,-10
+legend -> -4,9
+push -> -2,-10
+them -> -2,-10
+
+=7,3=
+8
+city -> 6,-4
+cool -> -4,-8
+Internet -> 4,-6
+fabric -> 4,-6
+
+=-7,-4=
+8
+overnight -> -8,4
+corporation -> 2,-8
+bicycle -> -3,3
+photo -> -3,3
+
+=-7,4=
+8
+overnight -> -3,-9
+left -> 1,1
+Internet -> 2,7
+fabric -> 2,7
+
+=7,-4=
+8
+mouse -> 5,-6
+circle -> 5,3
+guideline -> -2,-6
+exception -> -2,-6
+
+=7,4=
+8
+overnight -> 8,-3
+legend -> -10,2
+product -> 3,-4
+priority -> 3,-4
+
+=-7,-5=
+9
+particularly -> 9,-8
+exceed -> -4,7
+guideline -> -2,7
+priority -> -5,-4
+
+=-7,5=
+9
+fairly -> 5,1
+exceed -> -3,-7
+Internet -> 3,7
+fabric -> 3,7
+
+=7,-5=
+9
+city -> -6,5
+exceed -> 6,6
+powder -> -4,-9
+drive -> -4,-9
+
+=7,5=
+9
+affair -> 1,-4
+sit -> 3,-1
+approve -> 7,-6
+accomplish -> 7,-6
+
+=-7,-6=
+9
+particularly -> 8,-9
+legend -> -7,-8
+guideline -> -5,5
+priority -> -5,3
+
+=-7,6=
+9
+ally -> 0,-1
+circle -> 2,-7
+approve -> 4,8
+accomplish -> 4,8
+
+=7,-6=
+9
+city -> 1,-8
+exam -> -2,-4
+hard -> 3,1
+priority -> 5,-4
+
+=7,6=
+9
+devil -> 3,-1
+cool -> 7,-7
+Internet -> 3,7
+exception -> -4,-6
+
+=-7,7=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-7,-7=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=7,-7=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=7,7=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-8,0=
+8
+overnight -> -5,8
+legend -> 7,-7
+approve -> -2,8
+accomplish -> -2,8
+
+=8,0=
+8
+overnight -> 3,-9
+corporation -> -6,6
+bicycle -> 2,4
+fabric -> 7,-2
+
+=-8,-1=
+8
+fence -> -2,-6
+cool -> 5,8
+guideline -> -2,6
+exception -> -2,6
+
+=-8,1=
+8
+plastic -> -4,9
+cool -> 6,-7
+approve -> -1,8
+accomplish -> -1,8
+
+=8,-1=
+8
+mouse -> 8,1
+weakness -> -4,-2
+Internet -> 1,-7
+fabric -> 1,-7
+
+=8,1=
+8
+mouse -> -4,-7
+weakness -> 2,4
+Internet -> 2,-7
+fabric -> 2,-7
+
+=-8,-2=
+8
+city -> -7,1
+exceed -> -7,0
+Internet -> -3,6
+fabric -> -3,6
+
+=-8,2=
+8
+fairly -> 2,-4
+cool -> 5,-8
+Internet -> 0,7
+fabric -> 0,7
+
+=8,-2=
+8
+mouse -> 0,8
+weakness -> 2,4
+bicycle -> 0,-4
+photo -> 0,-4
+
+=8,2=
+8
+overnight -> -4,8
+sit -> -1,-2
+hard -> 1,-2
+command -> 1,-2
+
+=-8,-3=
+9
+overnight -> 9,-4
+weakness -> 3,4
+approve -> -5,7
+accomplish -> -5,7
+
+=-8,3=
+9
+fairly -> 5,1
+exam -> 2,4
+bicycle -> 1,5
+photo -> 1,5
+
+=8,-3=
+9
+overnight -> 2,-10
+legend -> 9,7
+guideline -> -1,-7
+exception -> -1,-7
+
+=8,3=
+9
+fence -> -7,-1
+adviser -> -8,-9
+hard -> -1,3
+accomplish -> 2,9
+
+=-8,-4=
+9
+fairly -> -5,2
+corporation -> -5,8
+approve -> -5,7
+accomplish -> -5,7
+
+=-8,4=
+9
+overnight -> -1,10
+meaning -> -6,1
+boss -> 9,9
+priority -> 4,5
+
+=8,-4=
+9
+plastic -> -7,8
+cool -> 8,6
+approve -> -2,-9
+accomplish -> -2,-9
+
+=8,4=
+9
+mouse -> 7,-6
+cool -> -10,3
+powder -> 6,-8
+drive -> 6,-8
+
+=-8,-5=
+9
+effective -> 9,-9
+circle -> 0,7
+Internet -> -6,6
+fabric -> -6,6
+
+=-8,5=
+9
+fence -> -2,-7
+corporation -> -9,2
+guideline -> 2,7
+exception -> 2,7
+
+=8,-5=
+9
+mouse -> -8,3
+legend -> 9,7
+Internet -> 6,6
+priority -> 6,0
+
+=8,5=
+9
+mouse -> 8,-4
+weakness -> 0,-5
+bicycle -> -1,-5
+photo -> -5,1
+
+=-8,-6=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-8,6=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=8,-6=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=8,6=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-9,0=
+9
+mouse -> -5,7
+weakness -> -1,5
+product -> -1,6
+priority -> -1,6
+
+=9,0=
+9
+ally -> 0,-1
+exceed -> -6,5
+guideline -> 6,-4
+accomplish -> 8,-4
+
+=-9,-1=
+9
+fence -> -2,7
+exceed -> 7,-4
+approve -> -3,9
+accomplish -> -3,9
+
+=-9,1=
+9
+city -> -3,-7
+weakness -> 5,0
+powder -> -1,10
+drive -> -1,10
+
+=9,-1=
+9
+affair -> -2,3
+exam -> 4,0
+Internet -> 1,-8
+fabric -> 1,-8
+
+=9,1=
+9
+fairly -> -3,4
+exam -> 4,2
+powder -> 3,-10
+drive -> 3,-10
+
+=-9,-2=
+9
+overnight -> 6,-8
+exam -> 4,-1
+Internet -> 6,5
+priority -> 4,-4
+
+=-9,2=
+9
+devil -> -1,-3
+gene -> 1,1
+product -> 0,6
+priority -> 0,6
+
+=9,-2=
+9
+plastic -> 9,-7
+cool -> -6,8
+guideline -> 0,7
+accomplish -> 1,9
+
+=9,2=
+9
+plastic -> 8,7
+exam -> -3,3
+diamond -> -8,9
+vital -> 9,-8
+
+=-9,-3=
+9
+plastic -> 7,-9
+circle -> -1,-7
+guideline -> -4,6
+exception -> -4,6
+
+=-9,3=
+9
+fence -> -7,1
+weakness -> -1,-5
+product -> 1,6
+priority -> 1,6
+
+=9,-3=
+9
+fairly -> -2,5
+exceed -> -8,-1
+product -> -1,-6
+priority -> -1,-6
+
+=9,3=
+9
+fence -> -5,-5
+corporation -> 9,2
+bicycle -> -5,-2
+drive -> -7,-7
+
+=-9,-4=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-9,4=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=9,-4=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=9,4=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-9,-5=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-9,5=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=9,-5=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=9,5=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,0=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,0=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,-1=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,1=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,-1=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,1=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,-2=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,2=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,-2=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,2=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,-3=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=-10,3=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,-3=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+
+=10,3=
+10
+huzzah -> win
+huzzah -> win
+huzzah -> win
+huzzah -> win
+

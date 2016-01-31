@@ -82,8 +82,8 @@ CalcNextPoint <- function(x=0, y=0, angleOffset = 1, distOffset = 10){
   point[, 2] <- round(sin(angle) * distance) # y
   point
 }
-# 
-# numPoints <- 500
+# # 
+# numPoints <- 100
 # spiralPoints <- data.frame(matrix(NA, nrow=numPoints, ncol=2))
 # colnames(spiralPoints) <- c("x", "y")
 # spiralPoints[1, ] <- c(10, 10)

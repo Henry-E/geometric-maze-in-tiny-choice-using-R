@@ -13,7 +13,7 @@ colnames(mostCommonWords) <- c("words")
 
 # There's a better way to do this I'm sure
 # generate all possible combination then
-radius <- 3
+radius <- 10
 pointsOnASmallSquare <- t(combn(rep(seq(-radius, radius), 2), 2))
 #  unique to remove duplicates
 pointsOnASmallSquare <- unique(pointsOnASmallSquare)
@@ -22,6 +22,11 @@ pointsOnASmallSquare <- data_frame(x = pointsOnASmallSquare[, 1], y = pointsOnAS
 pointsOnASmallSquare$distance <-  round(sqrt(pointsOnASmallSquare$x^2 + pointsOnASmallSquare$y^2))
 pointsOnASmallSquare <- filter(pointsOnASmallSquare, distance <= radius)
 # ggplot(pointsOnASmallSquare, aes(x=x, y=y)) + geom_point()
+# sort them so that 0,0 is the first in the array
+pointsOnASmallSquare <- arrange(pointsOnASmallSquare, abs(x), abs(y))
+
+
+
 
 # We're testing out the operations on a data frame first, then
 # expanding out to use a list of data frames, which we loop over
@@ -37,6 +42,41 @@ newLocations <- data_frame(x = newLocations[, 1],
                            y = newLocations[, 2])
 
 portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
+
+# Lognormal distributed distance values, stddev = 1, mean = 2
+lognormalRandomObservations <- rlnorm(nrow(pointsOnASmallSquare), meanlog = 2, sdlog = 1)
+
+newLocations <- CalcNextPoint(pointsOnASmallSquare$x,
+                              pointsOnASmallSquare$y,
+                              distOffset=lognormalRandomObservations)
+newLocations <- data_frame(x = newLocations[, 1], 
+                           y = newLocations[, 2])
+
+portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
+
+# normally distributed distance values, stddev = 3, mean = 0
+normalRandomObservations <- rnorm(nrow(pointsOnASmallSquare), mean = 0, sd = 3)
+
+newLocations <- CalcNextPoint(pointsOnASmallSquare$x,
+                              pointsOnASmallSquare$y,
+                              distOffset=normalRandomObservations)
+newLocations <- data_frame(x = newLocations[, 1], 
+                           y = newLocations[, 2])
+
+portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
+
+# uniformly distributed distance values, min = 1, max = 6
+uniformRandomObservations <- rnorm(nrow(pointsOnASmallSquare), min = 1, max = 6)
+
+newLocations <- CalcNextPoint(pointsOnASmallSquare$x,
+                              pointsOnASmallSquare$y,
+                              distOffset=uniformRandomObservations)
+newLocations <- data_frame(x = newLocations[, 1], 
+                           y = newLocations[, 2])
+
+portalDestinations[[length(portalDestinations) + 1 ]] <- newLocations
+
+
 
 randomLocations <- function(numObs, radius) sample(seq(-(radius-1), (radius-1)), numObs, replace = TRUE)
 
@@ -67,20 +107,19 @@ for(currentPortal in seq(length(portalDestinations))){
   # mostCommonWords <- mostCommonWords[!(mostCommonWords %in% theseWords)]
   portalLabels <- theseWords[newLocations$relativeDistance, ]
   
-  
   # convert the x, y coords in the their concatenated string name
   newLocations <- newLocations[c("x", "y")]
   newLocations <- data.frame(lapply(newLocations, as.character), stringsAsFactors=FALSE)
   destinationName <- data_frame(name = paste(newLocations$x, newLocations$y, sep = ","))
   
-  # destination string name is all we really care about now
-  portalDestinations[[currentPortal]] <- data_frame(destName=destinationName[[1]], label=portalLabels[[1]])
+  # replace all the rows corresponding to the victory condition (the radius)
+  # with the win name and label
+  portalLabels[pointsOnASmallSquare$distance == radius, ] <- "huzzah"
+  destinationName[pointsOnASmallSquare$distance == radius, ] <- "win"
   
+  # destination string name is all we really care about now
+  portalDestinations[[currentPortal]] <- data_frame(destName=destinationName[[1]], label=portalLabels[[1]]) 
 }
-# this will take place in the looping
-# newLocations$distance <- round(sqrt(newLocations$x^2 + newLocations$y^2))
-
-
 
 # this is all messing around with dataframes to make the coords into strings
 pointsOnASmallSquare <- data.frame(lapply(pointsOnASmallSquare, as.character), stringsAsFactors=FALSE)
@@ -88,20 +127,35 @@ pointsOnASmallSquare$name <- paste(pointsOnASmallSquare$x, pointsOnASmallSquare$
 
 # as a test we're shifting all the points down by one space and
 # seeing if that works as expected in tiny choice
-numPoints <- length(pointsOnASmallSquare[[1]])
-shiftedPoints <- c(numPoints, seq(numPoints - 1))
-pointsOnASmallSquare$destination <- pointsOnASmallSquare[shiftedPoints, "name"]
-pointsOnASmallSquare$text <- sample(c("l", "r", "u", "d"), numPoints, replace = TRUE)
+# numPoints <- length(pointsOnASmallSquare[[1]])
+# shiftedPoints <- c(numPoints, seq(numPoints - 1))
+# pointsOnASmallSquare$destination <- pointsOnASmallSquare[shiftedPoints, "name"]
+# pointsOnASmallSquare$text <- sample(c("l", "r", "u", "d"), numPoints, replace = TRUE)
+
+numPoints <- nrow(pointsOnASmallSquare)
+this <- ""
 
 for(point in seq(numPoints)){
-  this<- str_c("=", 
+  this<- str_c(this,
+      # the heading for each point
+      "=", 
       pointsOnASmallSquare[point, "name"],
-      "=\n\n",
-      pointsOnASmallSquare[point, "text"],
-      " -> ",
-      pointsOnASmallSquare[point, "destination"],
-      "\n\n")
-  cat(this)
+      "=\n",
+      # the description, currently only the distance from the centre
+      pointsOnASmallSquare[point, "distance"],
+      "\n")
+      # loop over all the portal points with labels and destinations
+      for(portal in seq(length(portalDestinations))){
+        currentPortal <- data.frame(portalDestinations[[portal]])
+        this <- str_c(this, 
+                      currentPortal[point, "label"],
+                      " -> ",
+                      currentPortal[point, "destName"],
+                      "\n")
+      }
+      this <- str_c(this, "\n")
 }
 
-
+sink("output.txt")
+cat(this)
+sink()
